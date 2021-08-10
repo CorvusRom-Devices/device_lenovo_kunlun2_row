@@ -19,14 +19,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Pixel Experience targets
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CorvusOS stuff
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_kunlun2_row
+PRODUCT_NAME := corvus_kunlun2_row
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := kunlun2_row
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_MODEL := Lenovo K10 Note
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+RAVEN_LAIR := Beta-Official
+TARGET_INCLUDE_PIXEL_CHARGER := true

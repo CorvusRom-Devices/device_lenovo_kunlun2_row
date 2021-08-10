@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_kunlun2_row.mk
+    $(LOCAL_DIR)/corvus_kunlun2_row.mk
